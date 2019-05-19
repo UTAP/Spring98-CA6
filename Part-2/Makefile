@@ -2,7 +2,7 @@ CC = g++
 BUILD_DIR = build
 SRC_DIR = src
 INCLUDE_DIR = include
-CFLAGS = -std=c++11 -Wall -Werror -I$(INCLUDE_DIR)
+CFLAGS = -std=c++11 -I$(INCLUDE_DIR)
 
 EXECUTABLE_FILE = file_system_interface.out
 
