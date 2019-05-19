@@ -23,7 +23,7 @@ void Directory::check_new_element_validity(std::string title)
 {
     constexpr int FIRST_ELEMENT = 0;
 
-    for (uint i = FIRST_ELEMENT; i < elements.size(); ++i)
+    for (unsigned int i = FIRST_ELEMENT; i < elements.size(); ++i)
         if (elements[i]->has_same_title(title))
             throw BadTitle();
 }

@@ -10,7 +10,7 @@ void Directory::view()
 
     cout << "Title: " << title << endl;
     
-    for (uint i = FIRST_ELEMENT; i < elements.size(); ++i)
+    for (unsigned int i = FIRST_ELEMENT; i < elements.size(); ++i)
         cout << "Title: " << elements[i]->get_title() <<
                 ", Type: " << elements[i]->get_type() << endl;
 }

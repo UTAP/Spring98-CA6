@@ -27,7 +27,7 @@ FileSystemInterface::ElementSharedPointer FileSystemInterface::get_element(int i
 {
     constexpr int FIRST_ELEMENT = 0;
 
-    for (uint i = FIRST_ELEMENT; i < elements.size(); ++i)
+    for (unsigned int i = FIRST_ELEMENT; i < elements.size(); ++i)
         if (elements[i]->has_same_id(id))
             return elements[i];
 
@@ -38,7 +38,7 @@ void FileSystemInterface::check_id_validity(int id) const
 {
     constexpr int FIRST_ELEMENT = 0;
 
-    for (uint i = FIRST_ELEMENT; i < elements.size(); ++i)
+    for (unsigned int i = FIRST_ELEMENT; i < elements.size(); ++i)
         if (elements[i]->has_same_id(id))
             throw IdAlreadyExists();
 }
@@ -48,7 +48,7 @@ void FileSystemInterface::check_parent_id_validity(int id) const
     constexpr int FIRST_ELEMENT = 0;
     constexpr char DIRECTORY[] = "Directory";
 
-    for (uint i = FIRST_ELEMENT; i < elements.size(); ++i)
+    for (unsigned int i = FIRST_ELEMENT; i < elements.size(); ++i)
         if (elements[i]->has_same_id(id))
         {
             if (elements[i]->get_type() != DIRECTORY)
