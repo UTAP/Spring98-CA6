@@ -1,5 +1,5 @@
-#include "../header/cone.h"
-#include "../header/constant.h"
+#include "cone.h"
+#include "constant.h"
 
 using namespace std;
 

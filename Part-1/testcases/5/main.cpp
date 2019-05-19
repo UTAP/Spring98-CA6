@@ -19,15 +19,15 @@ int main()
     shapes.push_back(new Cone(-20, 0, 5, 5, 2));
     shapes.push_back(new Cuboid(-5, 5, -5, 2, 6, 3));
 
-    for (int i = 0; i < shapes.size(); ++i)
+    for (unsigned int i = 0; i < shapes.size(); ++i)
         cout << shapes[i] << endl;
 
-    for (int i = 0; i < shapes.size(); ++i) {
+    for (unsigned int i = 0; i < shapes.size(); ++i) {
         shapes[i]->move(-5, -10, -5);
         shapes[i]->scale(3);
         shapes[i]->move(5, -10, 5);
     }
 
-    for (int i = 0; i < shapes.size(); ++i)
+    for (unsigned int i = 0; i < shapes.size(); ++i)
         cout << shapes[i] << endl;
 }

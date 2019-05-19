@@ -16,14 +16,14 @@ int main()
     shapes.push_back(new Cuboid(-5, 5, -5, 5, 5, 5));
     shapes.push_back(new Cone(5, 5, 5, 5, 5));
 
-    for (int i = 0; i < shapes.size(); ++i)
+    for (unsigned int i = 0; i < shapes.size(); ++i)
         cout << shapes[i] << endl;
 
-    for (int i = 0; i < shapes.size(); ++i) {
+    for (unsigned int i = 0; i < shapes.size(); ++i) {
         shapes[i]->move(-5, -10, -5);
         shapes[i]->scale(4);
     }
 
-    for (int i = 0; i < shapes.size(); ++i)
+    for (unsigned int i = 0; i < shapes.size(); ++i)
         cout << shapes[i] << endl;
 }

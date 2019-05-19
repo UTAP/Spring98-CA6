@@ -14,9 +14,9 @@ do
     make
     ./$2 2>&1 | diff testcases/$i/$i.txt -
     if ! ./$2 2>&1 | diff -rq testcases/$i/$i.txt -; then
-        echo "${RED}$i - Failed!${NC}"
+        echo -e "${RED}$i - Failed!${NC}"
     else
-        echo "${GREEN}$i - Passed!${NC}"
+        echo -e "${GREEN}$i - Passed!${NC}"
         counter=$(( counter + 1 ));
     fi
 done

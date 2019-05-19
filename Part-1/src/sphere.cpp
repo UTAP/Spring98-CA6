@@ -1,5 +1,5 @@
-#include "../header/sphere.h"
-#include "../header/constant.h"
+#include "sphere.h"
+#include "constant.h"
 
 using namespace std;
 

@@ -1,4 +1,4 @@
-#include "../header/cuboid.h"
+#include "cuboid.h"
 
 using namespace std;
 
